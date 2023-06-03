@@ -7,4 +7,5 @@ before_install:
   - docker build -t hello-world .
 
 script:
-  - docker run -it --rm hello-world node --version
+  # - docker run -it --rm hello-world node --version
+  - docker run -e CI=true hello-world npm test -- --coverage
