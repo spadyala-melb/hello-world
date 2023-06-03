@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha ./test.js"
+  },
+  "name": "hello-world",
+  "description": "Simple Node Js hello world app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
