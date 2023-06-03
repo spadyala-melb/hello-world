@@ -1,0 +1,16 @@
+language: node_js
+
+services:
+  - docker
+
+before_install:
+  - npm install -g yarn
+
+install:
+  - yarn install
+
+script:
+  - yarn build
+
+after_success:
+  - docker build -t spadyala-melb/hello-world .
