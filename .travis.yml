@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t hello-world .
+  - docker build -t hello-world -f Dockerfile .
 
 script:
   # - docker run -it --rm hello-world node --version
