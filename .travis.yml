@@ -1,19 +1,10 @@
-language: node_js
-
-node_js:
-  - 20.0.0
+language: minimal
 
 services:
   - docker
 
 before_install:
-  - npm install -g yarn
-
-install:
-  - yarn install
+  - docker build -t hello-world .
 
 script:
-  - yarn build
-
-after_success:
-  - docker build -t spadyala-melb/hello-world .
+  - docker run -it --rm hello-world node --version
