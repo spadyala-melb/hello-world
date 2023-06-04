@@ -1,6 +1,7 @@
 # Use an official Node.js runtime as the base image
-FROM alpine:latest
-RUN apk update && apk add nodejs npm
+# FROM alpine:latest
+# RUN apk update && apk add nodejs npm
+FROM node:alpine
 
 # Set the working directory inside the container
 WORKDIR /app
