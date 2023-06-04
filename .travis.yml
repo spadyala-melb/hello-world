@@ -9,3 +9,4 @@ before_install:
 script:
   # - docker run -it --rm hello-world node --version
   - docker run -e CI=true hello-world npm test -- --coverage
+  - docker run -p 3000:3000 hello-world
